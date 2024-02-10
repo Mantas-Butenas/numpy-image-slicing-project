@@ -4,6 +4,7 @@ import matplotlib.image as mpimg
 
 # Load the original image
 original_img = mpimg.imread('otter.jpg')
+print(original_img.shape)
 
 # Vertically slice the image by taking every second pixel
 v_sliced_img = original_img[:, ::2, :]
@@ -23,7 +24,9 @@ h_sliced_imgs = np.concatenate((h_sliced_imgs_l, h_sliced_imgs_r), axis=1)
 sliced_imgs = np.concatenate((v_sliced_imgs, h_sliced_imgs), axis=0)
 full_comp = np.concatenate((original_img, sliced_imgs), axis=0)
 
+plt.imsave('full_comp.jpg', full_comp)
 # Display the combined image
-plt.axis('off')  # Turn off axis labels
+# plt.axis('off')  # Turn off axis labels
 plt.imshow(full_comp)
 plt.show()
+

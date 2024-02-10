@@ -23,6 +23,7 @@ This Python script demonstrates image slicing and comparison techniques using Nu
 - `README.md`: This README file providing instructions and information about the project.
 - `requirements.txt`: Text file listing the dependencies required for running the script.
 
+![Full Composition](full_comp.jpg)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
